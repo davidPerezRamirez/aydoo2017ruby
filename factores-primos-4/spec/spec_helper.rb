@@ -8,7 +8,7 @@ ENV['RACK_ENV'] = 'test'
 
 require 'rack/test'
 require 'sinatra'
-require '../app.rb'
+require_relative '../app.rb'
 
 def app
   Sinatra::Application
