@@ -38,4 +38,10 @@ describe 'APP' do
 	    expect(last_response.status).to eq 400
 	end
 
+	it "llamada a post/primos con parametro 0 deberia ser vacio" do
+	    post "/primos", params = {"x" => "0"}
+	    
+	    expect(last_response.body).to eq ""
+	end
+
 end
