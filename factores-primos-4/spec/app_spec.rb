@@ -32,4 +32,10 @@ describe 'APP' do
 	    expect(last_response.status).to eq 400
 	end
 
+	it "llamada a post/primos con parametro alfanumerico deberia tener status 400" do
+	    get "/primos", params = {"x" => "12a"}
+	    
+	    expect(last_response.status).to eq 400
+	end
+
 end
