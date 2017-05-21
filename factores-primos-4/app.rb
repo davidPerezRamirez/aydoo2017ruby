@@ -19,7 +19,7 @@ end
 
 get '/primos' do
 	numero =  params[:x]
-
+ 
 	factores = obtenerFactoresPrimos(numero)
 	settings.impresora.imprimirArrayDescendente(factores)	
 end
