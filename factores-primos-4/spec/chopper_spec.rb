@@ -12,6 +12,7 @@
 # En ambos casos se asume que el array no contendrá número negativos.
  
 require 'rspec' 
+=begin
 require_relative '../model/chopper'
 
 describe 'Chopper' do
@@ -30,7 +31,7 @@ describe 'Chopper' do
     expect(chopper.chop(3,[0,7,3])).to eq 2 
   end
 
-=begin
+
   it 'sum de [] deberia ser vacio' do
     expect(chopper.sum([])).to eq 'vacio' 
   end
@@ -66,6 +67,7 @@ describe 'Chopper' do
   it 'sum de [20,1,1,1] deberia ser dos,tres' do
     expect(chopper.sum([20,1,1,1])).to eq 'dos,tres'
   end
-=end
 
 end
+=end
+
