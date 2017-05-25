@@ -1,8 +1,5 @@
-require_relative "validador.rb"
+class Factorizador
 
-class Factorizador	
-
-	private
 	def calcularFactoresPrimos(num)
 		numerosPrimos = []
 		factor = 2
@@ -20,12 +17,6 @@ class Factorizador
 		end
 
 		return numerosPrimos
-	end
-
-	public
-	def obtenerFactoresPrimos(numero)
-		validarNumeroEntero(numero)
-		calcularFactoresPrimos(numero.to_i)
 	end
 
 end
